@@ -15,6 +15,7 @@ document.getElementsByClassName('top_menu left')[0].innerHTML+="<div><a href='#'
 
 function setColor() {
     GM_setValue('color', prompt('Color?', GM_getValue('color')));
+	changeBG()
 }
 
 function changeBG() {
@@ -24,7 +25,7 @@ function changeBG() {
 if(GM_getValue('color') == undefined) {
     setColor();
 } else {
-	
+	changeBG()
 }
 
 
