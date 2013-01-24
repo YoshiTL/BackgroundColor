@@ -15,12 +15,16 @@ document.getElementsByClassName('top_menu left')[0].innerHTML+="<div><a href='#'
 
 function setColor() {
     GM_setValue('color', prompt('Color?', GM_getValue('color')));
-	color = GM_getValue('color');
-	document.body.style.backgroundColor = color;
+}
+
+function changeBG() {
+	document.body.style.backgroundColor = GM_getValue('color');
 }
 
 if(GM_getValue('color') == undefined) {
     setColor();
+} else {
+	
 }
 
 
